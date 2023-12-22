@@ -3,7 +3,7 @@ import { Navigation } from '@/app/ui/components/navigation';
 
 export default function Home() {
   return (
-    <div>
+    <div className='w-full h-screen'>
       <Navigation />
     </div>
   );

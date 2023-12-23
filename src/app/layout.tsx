@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Roboto_Mono } from 'next/font/google';
 import '@/app/ui/globals.css';
 import PrelineScript from '@/app/ui/PrelineScript';
 
-const inter = Inter({ subsets: ['latin'] });
+const robotoMono = Roboto_Mono({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='bg-[#f6f9f8] dark:bg-[#060908]'>
-      <body className={inter.className}>{children}</body>
+      <body className={robotoMono.className}>{children}</body>
       <PrelineScript />
     </html>
   );
